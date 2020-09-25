@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Універсальний селектор */
+* {
+  font-size: 50px;
+  color: black;
+}
+
+/* Селектор по тегу*/ 
+h1 {
+  color: chocolate;
+}
+
+/* Селектор класу */
+.text-green{
+    color: green;
+}
+
+.text-grey{
+    color: grey;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    border: 1px solid crimson;
+}
+
+.block-1{
+    background-color: darkblue;
+    color: #fff;
+}
+
+
+.block-2{
+    background-color: rgb(240, 236, 23);
+}
+
+/* Селектор ідентифікатора */
+#test{
+    width: 200px;
+}
+
+/* Селектор потомка */
+
+div ul li{
+    color: tomato;
+}
+
+ul li{
+    text-decoration: underline;
+}
+
+/* Дочерний селектор */
+p >span{
+    font-size: 25px;
+    color: turquoise;
+}
+
+p >span >span{
+    color: blue;
+} 
