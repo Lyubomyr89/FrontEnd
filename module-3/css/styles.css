@@ -1,65 +1,171 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Універсальний селектор */
 * {
-  font-size: 50px;
-  color: black;
+    box-sizing: border-box;
+  /* font-size: 50px; */
+  /* color: black; */
 }
 
-/* Селектор по тегу*/ 
+/* Селектор по тегу*/
 h1 {
   color: chocolate;
 }
 
+section {
+  max-width: 80%;
+  margin: 0 auto 20px;
+  padding: 20px;
+  border: 2px dotted chocolate;
+}
+
 /* Селектор класу */
-.text-green{
-    color: green;
+.text-green {
+  color: green;
 }
 
-.text-grey{
-    color: grey;
+.text-grey {
+  color: grey;
 }
 
-.block{
-    width: 100px;
-    height: 100px;
-    border: 1px solid crimson;
+.block {
+  width: 100px;
+  height: 100px;
+  border: 1px solid crimson;
 }
 
-.block-1{
-    background-color: darkblue;
-    color: #fff;
+.block-1 {
+  background-color: darkblue;
+  color: #fff;
 }
 
-
-.block-2{
-    background-color: rgb(240, 236, 23);
+.block-2 {
+  background-color: rgb(240, 236, 23);
 }
 
 /* Селектор ідентифікатора */
-#test{
-    width: 200px;
+#test {
+  width: 200px;
 }
 
 /* Селектор потомка */
 
-div ul li{
-    color: tomato;
+div ul li {
+  color: tomato;
 }
 
-ul li{
-    text-decoration: underline;
+ul li {
+  text-decoration: underline;
 }
 
 /* Дочерний селектор */
-p >span{
-    font-size: 25px;
-    color: turquoise;
+p > span {
+  font-size: 25px;
+  color: turquoise;
 }
 
-p >span >span{
-    color: blue;
-} 
+.box {
+  text-align: center;
+  border: 1px solid red;
+}
+
+.box > div {
+  padding: 20px 0;
+  background-color: bisque;
+}
+
+.box > div div {
+  width: 50%;
+  background-color: #fcc;
+  margin: 0 auto;
+}
+
+/* Сестринский селектор */
+h2 + p {
+  color: green;
+  font-size: 20px;
+}
+
+/* Селектор атрибута */
+a[href="https://github.com/"]
+{
+  color: #ca3c25;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Селектор псевдокласса */
+a:hover {
+  color: #067bc2;
+}
+
+.inner-box {
+    width: 200px;
+    height: 100px;
+    background-color: coral;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.inner-box:hover{
+    width: 250px;
+    height: 180px;
+    background-color: tomato;
+}
+
+.block3{
+    height: 150px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: yellow;
+    transition: .2s all linear;
+    cursor: pointer;
+}
+
+.block3:hover{
+    height: 100px;
+    width: 90%;
+    background-color: orangered;
+}
+
+section.repetition{
+    color: red;
+}
+
+.repetition{
+    text-align: center;
+    color: orangered;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.model{
+    width: 700px;
+    /* height: 400px; */
+    background-color: #ccc;
+    /* margin: 20px 40px 50px 80px; */
+
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+
+    padding: 40px;
+    border: 2px solid crimson;
+}
+
+.model2{
+    width: 700px;
+    height: 100px;
+    background-color: #cff;
+    margin: 20px;
+    padding: 40px;
+    border: 2px solid rgb(13, 200, 38);
+}
+
+.model span{
+    background-color: cyan;
+}

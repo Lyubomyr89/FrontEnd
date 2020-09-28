@@ -11,6 +11,7 @@
       * {
         /* color: red; */
       }
+
       /* Селектор по тегу*/
       h1 {
         color: yellow;
@@ -18,43 +19,187 @@
     </style>
   </head>
   <body>
-    <h1 style="color: violet">Hello World</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <div>BLOCK</div>
-    <h2 class="text-green">Hello World-2</h2>
-    <h2 class="text-grey">Hello World-3</h2>
-    <h2 class="text-green">Hello World-4</h2>
-    <h2 class="text-grey">Hello World-5</h2>
+    <section>
+      <h1 style="color: violet">Селектор по тегу</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div>BLOCK</div>
+    </section>
 
-    <div class="block block-1">1</div>
-    <div class="block block-2">2</div>
-    <div class="block block-1">3</div>
-    <div class="block block-2">4</div>
+    <section>
+      <h2 class="section-title">Селектор класу</h2>
 
-    <div id="test" class="block">TEST</div>
+      <h2 class="text-green">Hello World-2</h2>
+      <h2 class="text-grey">Hello World-3</h2>
+      <h2 class="text-green">Hello World-4</h2>
+      <h2 class="text-grey">Hello World-5</h2>
 
-    <div>
+      <div class="block block-1">1</div>
+      <div class="block block-2">2</div>
+      <div class="block block-1">3</div>
+      <div class="block block-2">4</div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Селектор ідентифікатора</h2>
+      <div id="test" class="block">TEST</div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Селектор потомка</h2>
+      <div>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li><a href="https://github.com/">github</a></li>
+        </ul>
+      </div>
+
       <ul>
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
         <li>item 4</li>
       </ul>
-    </div>
+    </section>
 
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-      <li>item 4</li>
-    </ul>
+    <section>
+      <h2 class="section-title">Дочірній селектор</h2>
+      <p>
+        <span>test span</span>
+      </p>
 
-    <p>
-      <span>test span</span>
-    </p>
+      <p>
+        <span>test P Lorem <span>ipsum dolor</span> sit amet.</span>
+      </p>
 
-    <p>
-      <span>test P Lorem <span>ipsum dolor</span> sit amet.</span>
-    </p>
+      <div class="box">
+        <div>
+          Зовнішній
+          <div>Внутрішній</div>
+          <div>Внутрішній2</div>
+          <div>Внутрішній3</div>
+          <div>Внутрішній4</div>
+          <div>Внутрішній5</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Сестринський селектор</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Селектор атрибута</h2>
+      <a href="https://github.com/">github</a>
+      <a href="#">Тестове посилання</a>
+      <a href="#">Тестове посилання</a>
+      <a href="https://github.com/">github</a>
+    </section>
+
+    <section>
+      <h2 class="section-title">Селектор псевдокласса</h2>
+      <a href="https://github.com/">github</a>
+      <div class="inner-box"></div>
+
+      <div class="block3"></div>
+    </section>
+
+    <section class="repetition">
+      <h2 class="section-title">Наслідування</h2>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, iste.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, iste.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Модель візуального форматування</h2>
+
+      <div class="model">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta
+        quo velit consequatur, illo optio cum aut iure modi nobis in asperiores
+        ut maiores voluptatum quos beatae perspiciatis, reiciendis tempora!
+        Corporis nisi excepturi esse dolore iure dignissimos voluptas illum vel
+        at voluptate laudantium beatae omnis, amet aliquid! Dolore dolorum alias
+        sed saepe quos earum impedit tempore ad, sapiente itaque nihil. Fugit
+        <span>
+          quod eius temporibus id iure, ipsum molestias atque, dignissimos
+          laboriosam amet exercitationem nesciunt et! Aut dolore eum temporibus
+          autem sit soluta aperiam minima mollitia facilis adipisci, nulla
+          veniam voluptatibus? Modi, error numquam eaque iste similique
+          assumenda id exercitationem nam consectetur atque alias necessitatibus
+          unde animi, dolores pariatur deleniti voluptate aut explicabo magnam
+          inventore tenetur quae? Dolor debitis voluptates magni. Corporis quos
+          voluptas odit vel expedita, fugiat magnam debitis. Quae incidunt,
+          dignissimos minima iure repellendus eligendi fuga libero. In dolor
+          iste culpa eum at! Facilis maxime magnam incidunt sunt enim. Placeat
+          voluptatem ex</span
+        >
+        sed velit cupiditate nemo aut, minus autem labore, perferendis at. Eius
+        quibusdam incidunt, reiciendis eaque excepturi placeat est, voluptatem
+        ea voluptatibus repellendus maiores recusandae laborum, blanditiis
+        tempora? Quia in voluptatibus similique eveniet, quisquam animi quos
+        esse pariatur voluptates quasi deserunt sunt ab dolores distinctio
+        consequuntur quis eligendi repudiandae dolore vel minima! Dolore non
+        voluptatibus delectus ex reiciendis? Architecto veniam, quae sed, velit
+        voluptatibus laborum fugiat quis temporibus delectus recusandae
+        similique a! Fugiat quisquam voluptate sapiente odio natus non, maxime
+        fugit doloremque dicta, officia eaque error, laborum molestiae?
+        Voluptatibus nostrum blanditiis maxime eos in illum consequuntur
+        repellat veritatis, suscipit quae cumque libero, accusamus id harum
+        provident? Fugit blanditiis doloremque iusto temporibus perferendis
+        exercitationem, deserunt ex quis dolorem quas? Inventore distinctio
+        asperiores laborum exercitationem facere possimus saepe minima velit
+        culpa amet ducimus repellendus dolorum ipsa ipsam et, corporis eum
+        perspiciatis natus illo autem maxime aut a voluptate. Ipsam, natus? Quo
+        sint, totam itaque repellendus qui expedita corporis dicta. Voluptates
+        reprehenderit blanditiis rerum, nulla, minus dolores ea debitis ipsum,
+        sapiente obcaecati quod eaque. Laboriosam eligendi eum sint non cumque
+        nobis? Distinctio accusamus tempore, quibusdam totam porro beatae iusto.
+        Nesciunt voluptate sequi architecto voluptas eum molestias deserunt
+        similique ipsum reprehenderit recusandae enim mollitia, error laboriosam
+        reiciendis quam atque quod distinctio fugit? Voluptatum, sed dolores
+        repellendus officia explicabo ipsa omnis quos expedita, distinctio id,
+        odit debitis exercitationem. Eum quasi consequuntur, reprehenderit
+        temporibus, neque hic, eaque facere iusto vel cumque velit laboriosam
+        earum. Modi ipsum rem magnam harum odit magni, quibusdam aspernatur ut
+        ex ad quidem, voluptas est quia molestiae, quaerat ab sequi amet natus.
+        Repellat beatae, dolore amet labore tempora animi architecto. Aliquam
+        totam ipsum perferendis ut. Unde rerum quae perspiciatis, excepturi
+        minima aliquam asperiores ipsa repudiandae et soluta? Officiis natus
+        repellat, repellendus quidem dolores illum ipsa cum a. Quas, porro
+        laudantium. Vel quisquam officia minus. Deleniti praesentium harum ipsum
+        maxime libero aspernatur itaque alias excepturi nisi ex nihil suscipit,
+        asperiores quis, eius, eum architecto cupiditate nesciunt! Quas,
+        voluptatem quam! Dolorem, accusamus. Aliquid temporibus sint minima est
+        repellat? Nemo in modi inventore at ea rerum reprehenderit?
+        Exercitationem vitae incidunt accusamus saepe consequuntur nam veritatis
+        officiis, libero voluptates dicta nesciunt atque expedita culpa. Ut,
+        esse maiores cupiditate vitae dicta deleniti quidem, suscipit libero
+        mollitia fugiat eius natus possimus perferendis aliquam. Corrupti
+        consequuntur ducimus, explicabo, fuga laudantium velit eum eos nam porro
+        earum pariatur. Veniam corrupti eaque nihil accusamus placeat odit
+        itaque. Dignissimos aliquid neque nam veritatis suscipit voluptas earum
+        commodi nisi, tempore ducimus doloribus eaque natus tempora eveniet
+        perferendis deleniti iusto quam! Cumque. Veniam exercitationem beatae,
+        soluta maiores officiis quidem voluptatibus sed est quos corporis
+        facilis molestiae! Perferendis atque, neque sequi voluptatem sunt
+        explicabo ea aliquid recusandae natus, magni tempore, delectus
+        laboriosam? Blanditiis?
+      </div>
+      <div class="model2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis autem
+        deserunt laboriosam illum veniam hic doloribus assumenda mollitia dolor!
+        Odio, ut? Illum quae rem doloremque debitis repellendus autem dolores
+        amet.
+      </div>
+    </section>
   </body>
 </html>
