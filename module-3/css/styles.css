@@ -160,12 +160,12 @@ section.repetition{
 .model2{
     width: 700px;
     height: 100px;
-    background-color: #cff;
+    background-color: #c22;
     margin: 20px;
     padding: 40px;
     border: 2px solid rgb(13, 200, 38);
 }
 
 .model span{
-    background-color: thistle;
+    background-color: cyan;
 }
