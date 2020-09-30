@@ -5,7 +5,7 @@ body {
 
 /* Універсальний селектор */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
   /* font-size: 50px; */
   /* color: black; */
 }
@@ -103,69 +103,119 @@ a:hover {
 }
 
 .inner-box {
-    width: 200px;
-    height: 100px;
-    background-color: coral;
-    transition: all .2s linear;
-    cursor: pointer;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 
-.inner-box:hover{
-    width: 250px;
-    height: 180px;
-    background-color: tomato;
+.inner-box:hover {
+  width: 250px;
+  height: 180px;
+  background-color: tomato;
 }
 
-.block3{
-    height: 150px;
-    max-width: 90%;
-    margin: 0 auto;
-    background-color: yellow;
-    transition: .2s all linear;
-    cursor: pointer;
+.block3 {
+  height: 150px;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: yellow;
+  transition: 0.2s all linear;
+  cursor: pointer;
 }
 
-.block3:hover{
-    height: 100px;
-    width: 90%;
-    background-color: orangered;
+.block3:hover {
+  height: 100px;
+  width: 90%;
+  background-color: orangered;
 }
 
-section.repetition{
-    color: red;
+section.repetition {
+  color: red;
 }
 
-.repetition{
-    text-align: center;
-    color: orangered;
-    font-size: 30px;
-    font-weight: 700;
+.repetition {
+  text-align: center;
+  color: orangered;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.model{
-    width: 700px;
-    /* height: 400px; */
-    background-color: #ccc;
-    /* margin: 20px 40px 50px 80px; */
+.model {
+  width: 700px;
+  /* height: 400px; */
+  background-color: #ccc;
+  /* margin: 20px 40px 50px 80px; */
 
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-bottom: 40px;
-    margin-left: 80px;
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-left: 80px;
 
-    padding: 40px;
-    border: 2px solid crimson;
+  padding: 40px;
+  border: 2px solid crimson;
 }
 
-.model2{
-    width: 700px;
-    height: 100px;
-    background-color: #c22;
-    margin: 20px;
-    padding: 40px;
-    border: 2px solid rgb(13, 200, 38);
+.model2 {
+  width: 700px;
+  height: 100px;
+  background-color: #c22;
+  margin: 20px 20px 0;
+  padding: 40px;
+  border: 2px solid rgb(13, 200, 38);
 }
 
-.model span{
-    background-color: cyan;
+.model span {
+  background-color: cyan;
+}
+
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  border: 1px solid red;
+}
+
+.inner-box3 {
+  height: 100px;
+  background-color: burlywood;
+  margin-top: 30px;
+}
+
+.block-3 {
+  height: 50px;
+  background-color: royalblue;
+  margin-bottom: 20px;
+}
+
+.parent-link {
+  /* font-size: 0; */
+  /* border:  1px solid red; */
+}
+
+.test-link {
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  font-weight: 700;
+  /* padding: 10px; */
+  text-decoration: none;
+  background-color: seagreen;
+}
+
+.wrp-btn{
+  text-align: center;
+}
+
+.btn-load {
+  display: inline-block;
+  width: 164px;
+  height: 60px;
+  border: rgb(98, 98, 98) solid 1px;
+  color: #626262;
+  text-align: center;
+  font-size: 24px;
+  line-height: 60px;
+  text-decoration: none;
 }
