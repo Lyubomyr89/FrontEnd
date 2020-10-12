@@ -204,7 +204,7 @@ section.repetition {
   background-color: seagreen;
 }
 
-.wrp-btn{
+.wrp-btn {
   text-align: center;
 }
 
@@ -218,4 +218,105 @@ section.repetition {
   font-size: 24px;
   line-height: 60px;
   text-decoration: none;
+}
+
+.text-a{
+  text-align: inherit;
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: #c22;
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+  text-indent: 50px;
+  line-height: 30px;
+  line-height: 2;
+}
+
+.text-a::first-letter{
+  color: aqua;
+  /* font-size: 45px; */
+}
+
+.section-title,
+.wrapper-link {
+  text-align: center;
+}
+
+.wrapper-link {
+  max-width: 85%;
+  padding: 20px 0;
+  border: 2px dotted blueviolet;
+}
+
+
+.wrapper-link:nth-child(3) {
+  margin: 30px 0 30px auto ;
+}
+
+.wrapper-link:nth-child(4) {
+  margin: 30px auto; /* Горизонтальне вирівнювання за допомогою margin; */
+}
+
+.wrapper-link:nth-child(5) {
+  margin: 30px auto 30px 0;
+}
+
+.wrapper-link a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: baseline;
+  vertical-align: middle;
+  vertical-align: top;
+  vertical-align: bottom;
+}
+
+.wrapper-link a:nth-child(1) {
+  padding: 20px;
+  background-color: chartreuse;
+  font-size: 40px;
+}
+.wrapper-link a:nth-child(2) {
+  padding: 40px;
+  background-color: yellow;
+  font-size: 60px;
+}
+
+.wrapper-link a:nth-child(3) {
+  padding: 60px 20px;
+  background-color: yellow;
+  font-size: 80px;
+}
+
+.wrapper-link a:nth-child(4) {
+  padding: 80px 20px;
+  background-color: yellow;
+  font-size: 100px;
+}
+
+.section-block{
+  width: 90%;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: crimson;
+  background-image: url(../images/1.jpg);
+  background-size: 33%;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-y; */
+  background-position: center;
+
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-clip: content-box;
+
+  background: crimson url(../images/2.jpg) right bottom no-repeat;
+  border: 8px dashed blue;
 }
