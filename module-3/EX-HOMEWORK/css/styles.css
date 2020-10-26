@@ -23,12 +23,11 @@ a {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
-.container-lifestyle{
+.container-lifestyle {
   margin-bottom: -130px;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .header {
@@ -100,4 +99,24 @@ a {
 
 .right {
   padding-left: 30px;
+}
+
+.btn-wrap {
+  text-align: center;
+  margin-top: 52px;
+  margin-bottom: 70px;
+}
+
+.more {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: rgb(98, 98, 98);
+  line-height: 58px;
+  border-width: 1px;
+  border-color: rgb(98, 98, 98);
+  border-style: solid;
+  background: transparent;
+  width: 162px;
+  height: 58px;
+  cursor: pointer;
 }

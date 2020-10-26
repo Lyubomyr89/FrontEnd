@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Шістнадцяткова система числення 0-9 + a-f */
+  background: #000000;
+  background: #ffffff;
+  background: rgb(100%, 100%, 100%);
+  /* (0 - 255) */
+  background: rgb(255, 255, 255);
+}
+
+.header {
+  /* background-color: rgba(0, 255, 255, 0.5); */
+  /* background-color: #00ffff90; */
+  height: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.451), rgba(0, 0, 0, 0.451)),
+    url(../images/bg-header.jpg);
+  background-size: cover;
+  /* opacity: 0.451; */
+  height: 770px;
+}
+
+.cart {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 70px;
+  height: 60px;
+  background: #fff url(../images/cart.png) no-repeat center;
+  background-size: 80%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart span {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(6, 214, 93);
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border-radius: 50%;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: .3s linear all;
+  opacity: 1;
+}
+
+.cart span:empty {
+    opacity: 0;
+}

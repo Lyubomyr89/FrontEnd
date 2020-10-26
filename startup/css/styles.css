@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navigation {
+}
+.logo-box {
+  display: inline-block;
+}
+.logo {
+}
+.menu {
+  display: inline-block;
+  width: 100%;
+  max-width: calc(100% - 140px);
+  text-align: right;
+  border: 1px solid red;
+}
+.menu-item {
+  display: inline-block;
+}
+.menu-item__link {
+}
