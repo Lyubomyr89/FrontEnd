@@ -1,3 +1,22 @@
+/* montserrat-regular - latin_cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v15-latin_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v15-latin_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +24,8 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 button {
@@ -21,28 +42,56 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.451), rgba(0, 0, 0, 0.451)),
+    url(../images/bg-header.jpg) no-repeat center top;
+  background-size: cover;
+  height: 800px;
+}
+
 .navigation {
 }
 .logo-box {
-  display: inline-block;
+  /* display: inline-block; */
+  float: left;
 }
 .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
 }
 .menu {
-  display: inline-block;
-  width: 100%;
-  max-width: calc(100% - 140px);
+  float: right;
   text-align: right;
-  border: 1px solid red;
 }
 .menu-item {
   display: inline-block;
 }
 .menu-item__link {
+  font-size: 14px;
+  line-height: 1.714;
+  color: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.test {
+  height: 200px;
+  background-color: orangered;
 }
