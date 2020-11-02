@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid;
+}
+
+.flexbox-title {
+  text-align: center;
+  font-size: 32px;
+  color: brown;
+  margin-bottom: 32px;
+}
+
+.f-box {
+  display: flex;
+
+  /* Змінюює напрямок осі */
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  flex-direction: row;
+
+  /* Керує переносом елементів */
+  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+
+  /* Горизонтальне вирівнювання в середині flex-контейнера */
+  justify-content: flex-start;
+  justify-content: center;
+  justify-content: flex-end;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+
+  /* Вертикальне вирівнювання в середині flex-контейнера */
+  align-items: stretch;
+  align-items: center;
+  align-items: flex-start;
+  align-items: flex-end;
+
+  border: 1px solid blue;
+
+  height: 500px;
+}
+
+.inner-box {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  line-height: 100px;
+  background-color: salmon;
+  border: slateblue 1px solid;
+  text-align: center;
+  color: wheat;
+  font-size: 32px;
+  font-weight: bold;
+}
