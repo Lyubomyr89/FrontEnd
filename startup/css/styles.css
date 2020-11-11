@@ -1,20 +1,37 @@
 /* montserrat-regular - latin_cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin_cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-       url('../fonts/montserrat-v15-latin_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v15-latin_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v15-latin_cyrillic-ext-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin_cyrillic-ext-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin-ext_latin */
+@font-face {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v12-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v12-latin-ext_latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 * {
@@ -24,13 +41,15 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
 button {
   background: none;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 ul {
@@ -44,7 +63,7 @@ img {
 
 a {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -53,7 +72,28 @@ a {
   padding: 0 15px;
 }
 
+.btn {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 2px;
+  width: 176px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  transition: 0.2s linear all;
+  font-weight: 700;
+  /* height: 46px; */
+}
+
 .header {
+  padding-top: 40px;
+  padding-bottom: 260px;
   background: linear-gradient(rgba(0, 0, 0, 0.451), rgba(0, 0, 0, 0.451)),
     url(../images/bg-header.jpg) no-repeat center top;
   background-size: cover;
@@ -61,11 +101,13 @@ a {
 }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 256px;
 }
 .logo-box {
-  /* display: inline-block; */
-  float: left;
 }
+
 .logo {
   color: #fff;
   font-size: 24px;
@@ -73,25 +115,66 @@ a {
   line-height: 1.5;
 }
 .menu {
-  float: right;
-  text-align: right;
+  display: flex;
+  align-items: center;
 }
 .menu-item {
-  display: inline-block;
 }
+
+.menu-item:not(:last-child) {
+  margin-right: 32px;
+}
+
 .menu-item__link {
   font-size: 14px;
   line-height: 1.714;
   color: #fff;
 }
 
-.clearfix::after {
+.menu-item__link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: 0.2s linear all;
+}
+
+.menu-item__link:hover::after {
+  width: 100%;
+}
+
+/* .clearfix::after {
   content: "";
   display: table;
   clear: both;
+} */
+
+.title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
 }
 
-.test {
-  height: 200px;
-  background-color: orangered;
+.header-text {
+  margin-bottom: 52px;
+  font-family: "Roboto Slab", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
 }
+.btn-container {
+  text-align: center;
+}
+
+.started:hover {
+  color: #c0301c;
+  background-color: #fff;
+}
+
+/* ======services=========== */
