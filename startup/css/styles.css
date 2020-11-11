@@ -4,11 +4,9 @@
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
-    url("../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff2")
-      format("woff2"),
+    url("../fonts/montserrat-v15-latin_cyrillic-ext-regular/montserrat-v15-latin_cyrillic-ext-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v15-latin_cyrillic-ext-regular.woff")
-      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/montserrat-v15-latin_cyrillic-ext-regular/montserrat-v15-latin_cyrillic-ext-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin_cyrillic-ext */
 @font-face {
@@ -16,21 +14,21 @@
   font-style: normal;
   font-weight: 700;
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
-    url("../fonts/montserrat-v15-latin_cyrillic-ext-700.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v12-latin-ext_latin/roboto-slab-v12-latin-ext_latin-regular.woff") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v15-latin_cyrillic-ext-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/montserrat-v15-latin_cyrillic-ext/montserrat-v15-latin_cyrillic-ext-700.woff2") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-slab-regular - latin-ext_latin */
 @font-face {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-style: normal;
   font-weight: 400;
   src: local(""),
-    url("../fonts/roboto-slab-v12-latin-ext_latin-regular.woff2")
+    url("../fonts/roboto-slab-v11-latin_cyrillic-ext/roboto-slab-v11-latin_cyrillic-ext-regular.woff2")
       format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/roboto-slab-v12-latin-ext_latin-regular.woff")
+      url("../fonts/roboto-slab-v11-latin_cyrillic-ext/roboto-slab-v11-latin_cyrillic-ext-regular.woff")
       format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -84,8 +82,8 @@ a {
   border-style: solid;
   border-radius: 2px;
   width: 176px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   transition: 0.2s linear all;
   font-weight: 700;
   /* height: 46px; */
@@ -157,12 +155,12 @@ a {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .header-text {
   margin-bottom: 52px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto Slab", serif;
   text-align: center;
   font-size: 20px;
   line-height: 24px;
