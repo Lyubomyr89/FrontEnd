@@ -7,7 +7,23 @@
     <title>Позиціонування елементів і CSS-трансформації.</title>
   </head>
   <body>
-    <section>
+    <header class="header">
+      <div class="container">
+        <div class="logo-container">
+          <a href="#" class="logo">Logo</a>
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="munu-item"><a href="#" class="menu-item__link">menu-1</a></li>
+            <li class="munu-item"><a href="#" class="menu-item__link">menu-2</a></li>
+            <li class="munu-item"><a href="#" class="menu-item__link">menu-3</a></li>
+            <li class="munu-item"><a href="#" class="menu-item__link">menu-4</a></li>
+            <li class="munu-item"><a href="#" class="menu-item__link">menu-5</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="section-1">
       <div class="container">
         <h2 class="title">
           Відносне позиціювання (<span>position: relative</span>)
@@ -37,7 +53,15 @@
         <h2 class="title">
           Позиціювання з фіксацією положення (<span>position: fixed</span>)
         </h2>
-        <div class="position-box"></div>
+        <div class="position-box fixed">
+          <div class="fixed-box">
+            <a href="https://www.facebook.com/" class="social-link"><img src="./img/facebook.svg" alt="facebook"></a>
+            <a href="#" class="social-link"><img src="./img/instagram.svg" alt="instagram"></a>
+            <a href="#" class="social-link"><img src="./img/facebook.svg" alt="facebook"></a>
+            <a href="#" class="social-link"><img src="./img/facebook.svg" alt="facebook"></a>
+            <a href="tel:+38067998999" class="social-link"><img src="./img/telephone.svg" alt="telephone"></a>
+          </div>
+        </div>
       </div>
     </section>
   </body>
