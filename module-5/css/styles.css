@@ -109,15 +109,70 @@
 
 .t-box {
   display: flex;
-  width: 300px;
+  width: 800px;
   height: 200px;
   margin: 0 auto 50px;
   background-color: rgb(112, 109, 109);
 }
 
-.it-box{
+.it-box {
   width: 100px;
   height: 100px;
-  background-color: rgb(163, 56, 56 );
+  background-color: rgb(163, 56, 56);
   margin: auto 0 0 auto;
 }
+
+.f-box::before,
+.f-box::after {
+  content: "pseudo";
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+.f-box:hover::after,
+.f-box:hover::before{
+  display: block;
+}
+
+.inner-box{
+  /* display: none; */
+}
+
+.f-box:hover .inner-box{
+  /* display: block; */
+}
+
+*{
+
+}
+
+div{
+
+}
+
+.id-box{
+
+}
+
+#id-box{
+
+}
+
+.t-box p{
+  color: yellow;
+  /* height: 50px; */
+  background-color: tomato;
+}
+
+.t-box div>div,
+.t-box >div>div,
+.t-box >div div{
+  background-color: violet;
+}
+
+.t-box div + p{
+  background-color: yellowgreen;
+} 
