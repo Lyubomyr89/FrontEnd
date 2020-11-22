@@ -25,9 +25,6 @@
 }
 
 .header .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: none;
 }
 
@@ -40,6 +37,10 @@
   color: coral;
 }
 .nav {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .menu {
   display: flex;
@@ -103,15 +104,12 @@
   position: relative;
   top: -100px;
   left: 100px;
-  /* bottom: 1px; */
-  /* right: 1px; */
   background-color: #0f0;
 }
 
 .box-3 {
   position: relative;
   bottom: 50px;
-  /* right: -50%; */
   background-color: rgb(4, 34, 4);
 }
 
@@ -126,7 +124,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-
   background-color: rgb(134, 19, 19);
 }
 
@@ -148,7 +145,6 @@
 }
 
 .box-a-4 {
-  /* position: absolute; */
   background-color: rgb(26, 7, 109);
   transition: 0.2s linear all;
 }
@@ -159,8 +155,6 @@
   position: fixed;
   top: 50%;
   left: 10px;
-  bottom: 10%;
-  right: 10%;
   color: wheat;
   transform: translateY(-50%);
 }
