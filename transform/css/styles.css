@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.box {
+  position: relative;
+  border: 1px solid red;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.center {
+  position: absolute;
+  /* left: calc(50% - 50px); */
+  /* top: calc(50% - 50px); */
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background-color: #ccc;
+  height: 100px;
+  width: 100px;
+}
+
+.inner-box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.top {
+  top: 20px;
+  left: 20px;
+  background-color: rgba(128, 128, 128, 0.8);
+  z-index: 10;
+}
+.middle {
+  top: 40px;
+  left: 40px;
+  background-color: rgba(158, 185, 37, 0.8);
+  z-index: 9;
+}
+.bottom {
+  top: 60px;
+  left: 60px;
+  background-color: rgba(16, 202, 235, 0.8);
+  z-index: 8;
+}
+
+.inner-box-2 {
+  height: 100px;
+  width: 100px;
+  transition: 0.3s linear all;
+}
+
+.top-2 {
+  background-color: rgba(128, 128, 128, 0.8);
+}
+.top-2:hover {
+  transform: translateX(10px) translateY(10px);
+}
+
+.middle-2 {
+  background-color: rgba(158, 185, 37, 0.8);
+}
+
+.middle-2:hover {
+  transform: rotate(45deg);
+}
+
+.bottom-2 {
+  background-color: rgba(16, 202, 235, 0.8);
+}
+
+.bottom-2:hover {
+  transform: scale(2);
+}
+
+.skew-2 {
+  background-color: greenyellow;
+}
+
+.skew-2:hover {
+  transform: skew(10deg);
+}
+.all {
+  background-color: #ff0;
+}
+.all:hover {
+  transform: translateX(-20px) rotate(10deg) scale(1.2) skew(10deg);
+}
+
+/* CARD */
+
+.card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid red;
+  perspective: 1000px;
+}
+
+.front,
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.front {
+  background-color: rgb(241, 167, 167);
+}
+
+.back {
+  background-color: #bdbdbd;
+  transform: rotateY(180deg);
+}
+
+.card:hover .front{
+    transform: rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: rotateY(360deg);
+}
