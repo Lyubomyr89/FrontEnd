@@ -1,0 +1,116 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background-color: #222;
+}
+
+.cube-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.cube {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  transform: rotateX(398deg) rotateY(310deg);
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  animation: rotate 10s infinite ease-in-out;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, .9);
+  color: #00ce7d;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: sans-serif;
+
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+}
+
+.front {
+  transform: translateZ(150px);
+}
+
+.back {
+  transform: translateZ(-150px) rotateY(180deg);
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(150px);
+  transform-origin: top right;
+}
+
+.left {
+  transform: rotateY(270deg) translateX(-150px);
+  transform-origin: center left;
+}
+
+.top {
+  transform: rotateX(-270deg) translateY(-150px);
+  transform-origin: top center;
+}
+
+.bottom {
+  transform: rotateX(270deg) translateY(150px);
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.cube:hover .front {
+  transform: translateZ(300px);
+}
+
+.cube:hover .back {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.cube:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.cube:hover .left {
+  transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.cube:hover .top {
+  transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.cube:hover .bottom {
+  transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
