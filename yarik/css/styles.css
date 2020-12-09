@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.flex-container {
+  height: 400px;
+  display: flex;
+
+  /* ================Властивості flex-контейнера============= */
+
+  /* Зміна напрямку головної осі */
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  flex-direction: row;
+  flex-direction: column;
+
+  /* Перенос flex-елементів на новий рядок*/
+  flex-wrap: wrap-reverse;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+
+  /* Горизонтальне вирівнювання flex-елементів */
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+
+  /* Вертикальне вирівнювання flex-елементів */
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: baseline;
+  align-items: stretch;
+  align-items: center;
+
+  /* Вертикальне вирівнювання flex-рядків */
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+  align-content: stretch;
+
+  border: 1px solid red;
+  max-width: 1140px;
+  margin: 0 auto 40px;
+  padding: 20px 0;
+}
+
+/* ================Властивості flex-елемента============= */
+
+.flex-elem {
+  /* height: 50px; */
+  width: 200px;
+  /* min-width: 200px; */
+  /* max-width: 400px; */
+  flex-basis: 33.333%;
+  flex-grow: 1;
+  /* margin-bottom: 20px; */
+  text-align: center;
+  background-color: #cfc;
+  border: 1px solid blueviolet;
+  line-height: 1.5;
+}
+
+.flex-elem:first-child {
+  flex-shrink: 1;
+  /* order: 6; */
+}
+
+.flex-elem:nth-child(2) {
+  flex-shrink: 3;
+  /* order: 5; */
+}
+
+.flex-elem:nth-child(3) {
+  flex-shrink: 4;
+  /* align-self: flex-start; */
+  /* align-self: flex-end; */
+  /* order: 4; */
+}
+
+.flex-elem:nth-child(6) {
+  /* order: -1; */
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid red;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  background-color: rgb(230, 255, 1);
+  flex-grow: 4;
+}
+.phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+
+  flex-grow: 1;
+}
+
+.phone-container a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.phone-container a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  background-color: coral;
+}
+.menu-item a {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: coral;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.2s linear all;
+}
+.menu-item:hover a {
+  background-color: rgb(241, 81, 22);
+}
+
+.menu-item:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+
+.box {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: springgreen;
+  margin: 0 auto;
+}
+
+.box div {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border: 1px silver solid;
+  margin: auto 0 0 auto;
+}
