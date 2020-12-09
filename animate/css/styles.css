@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #2c2c2c;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+.right{
+  transform: translateX(100%);
+}
+
+.left{
+  transform: translateX(-100%);
+}
+
+.anim-box {
+  height: 200px;
+  max-width: 600px;
+  background-color: darkred;
+  margin: 0 auto 20px;
+  opacity: 0;
+  /* transition: .3s background-color linear; */
+
+  /* Ім'я анімації*/
+  animation-name: bg-color;
+
+  /* Час виконання анімації */
+  animation-duration: 2s;
+
+  /* Часова функція анімації */
+  animation-timing-function: ease-in;
+
+  /* Кількість повторень анімації */
+  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
+
+  /* Стан елемента після анімації */
+  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+
+  /* Затримка виконання анімації */
+  animation-delay: .4s;
+
+  animation-direction: reverse;
+  animation-direction: alternate;
+  animation-direction: normal;
+  animation-direction: alternate-reverse;
+
+  /* Зупинка/початок анімації */
+  animation-play-state: running;
+}
+
+.anim-box:hover {
+  animation-play-state: running;
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: darkred;
+  }
+
+  50% {
+    /* max-width: 400px; */
+  }
+
+  80%{
+    transform: translateX(0);
+  }
+
+  100% {
+    background-color: rgb(255, 238, 0);
+    /* max-width: 600px; */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60%,100% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.anim-box:hover {
+  /* background-color: rgb(182, 92, 92); */
+}
+
+
+
+.rect{
+  width: 100px;
+  height: 100px;
+  background-color: darksalmon;
+  margin: 0 auto;
+
+  animation: rect infinite 1s ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes rect{
+  0%{
+    border-radius: 0%;
+  }
+  100%{
+    border-radius: 50%;
+  }
+}
+
+/* ==========Ялинка=============== */
+.tree {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 200px;
+  height: 200px;
+  background: url(../images/tree.png) no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
+.tree span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  position: absolute;
+  animation: light infinite 1s ease-in-out;
+  z-index: -1;
+}
+
+@keyframes light {
+  0%,
+  25% {
+    filter: hue-rotate(0deg);
+  }
+
+  26%,
+  50% {
+    filter: hue-rotate(125deg);
+  }
+
+  51%,
+  75% {
+    filter: hue-rotate(250deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.82);
+  box-shadow: 0px 0px 13px 5px rgb(255 0 0);
+  left: 82px;
+  top: 48px;
+}
+.blue {
+  background-color: rgba(0, 0, 255, 0.89);
+  box-shadow: 0px 0px 13px 5px rgba(0, 0, 255, 0.922);
+  left: 102px;
+  top: 68px;
+}
+.gree {
+  background-color: rgba(0, 128, 0, 0.904);
+  box-shadow: 0px 0px 13px 5px rgba(0, 128, 0, 0.918);
+  left: 110px;
+  top: 98px;
+}
+.yellow {
+  background-color: rgba(255, 255, 0, 0.849);
+  box-shadow: 0px 0px 13px 5px rgba(255, 255, 0, 0.918);
+  left: 72px;
+  top: 125px;
+}
+
+.crimson {
+  background-color: rgba(220, 20, 60, 0.918);
+  box-shadow: 0px 0px 13px 5px rgba(220, 20, 60, 0.911);
+  left: 83px;
+  top: 88px;
+}
+
+.coral {
+  background-color: rgba(255, 127, 80, 0.932);
+  box-shadow: 0px 0px 13px 5px rgba(255, 127, 80, 0.904);
+  left: 109px;
+  top: 135px;
+}
+
+.darkred {
+  background-color: rgba(139, 0, 0, 0.925);
+  box-shadow: 0px 0px 13px 5px rgba(139, 0, 0, 0.904);
+  left: 73px;
+  top: 152px;
+}
