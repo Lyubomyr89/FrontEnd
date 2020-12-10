@@ -50,7 +50,7 @@ ul {
   /* transition: .3s background-color linear; */
 
   /* Ім'я анімації*/
-  animation-name: bg-color;
+  /* animation-name: bg-color; */
 
   /* Час виконання анімації */
   animation-duration: 2s;
@@ -59,8 +59,8 @@ ul {
   animation-timing-function: ease-in;
 
   /* Кількість повторень анімації */
-  animation-iteration-count: 2;
   animation-iteration-count: infinite;
+  animation-iteration-count: 2;
 
   /* Стан елемента після анімації */
   animation-fill-mode: backwards;
@@ -145,7 +145,7 @@ ul {
   background-color: darksalmon;
   margin: 0 auto;
 
-  animation: rect infinite 1s ease-in-out;
+  /* animation: rect infinite 1s ease-in-out; */
   animation-direction: alternate;
 }
 
@@ -246,4 +246,33 @@ ul {
   box-shadow: 0px 0px 13px 5px rgba(139, 0, 0, 0.904);
   left: 73px;
   top: 152px;
+}
+
+
+/* Сніжинка */
+
+.snow span{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  animation: snow 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes snow{
+
+80%{
+  opacity: .8;
+}
+
+  100%{
+    top: 100%;
+  }
 }
