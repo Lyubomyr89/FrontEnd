@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.box {
+  border: 1px solid rgb(0, 0, 0);
+  height: 200px;
+  width: 300px;
+  margin: 0 auto 50px;
+  transition: 0.2s linear transform 3s;
+}
+
+.first {
+  background-color: rgb(9, 114, 0);
+  transform-origin: 0 50%;
+}
+
+.first:hover {
+  transform: rotateY(45deg);
+}
+
+.second {
+  background-color: rgb(12, 8, 204);
+
+  transform: translate(-5%, -5%);
+  transform: rotate(30deg);
+  transform: scale(2);
+  transform: skew(0deg);
+  transform: rotate(21deg) scale(0.8) skew(10deg) translate(20px);
+}
+
+.social-icon-box {
+  padding: 80px 0;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+
+.icon-list svg {
+  width: 50%;
+  height: 50%;
+  transition: 0.2s all linear;
+  fill: #262626;
+}
+
+.list-item:not(:last-child) {
+  margin-right: 110px;
+}
+
+.list-item a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.2s all linear;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.list-item a::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transition: 0.2s all linear;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.list-item a::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: 0.2s all linear;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.facebook:hover a::before,
+.facebook:hover a::after,
+.facebook:hover a {
+  background-color: #1f78c0;
+}
+.twitter:hover a::before,
+.twitter:hover a::after,
+.twitter:hover a {
+  background-color: #00bcf8;
+}
+.instagram:hover a::before,
+.instagram:hover a::after,
+.instagram:hover a {
+  background-color: #ffda55;
+  background-image: linear-gradient(
+    45deg,
+    #ffda55 0%,
+    #fe543f 50%,
+    #c938a9 100%
+  );
+}
+.linkedin:hover a::before,
+.linkedin:hover a::after,
+.linkedin:hover a {
+  background-color: #1976d2;
+}
+.youtube:hover a::before,
+.youtube:hover a::after,
+.youtube:hover a {
+  background-color: #f61c0d;
+}
+
+.facebook:hover svg {
+  fill: #fff;
+}
+.twitter:hover svg {
+  fill: #fff;
+}
+.instagram:hover svg {
+  fill: #fff;
+}
+.linkedin:hover svg {
+  fill: #fff;
+}
+.youtube:hover svg {
+  fill: #fff;
+}
+
+.list-item a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
