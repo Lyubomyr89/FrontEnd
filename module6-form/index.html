@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Форми</title>
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <h1 class="title">Форми</h1>
+
+        <form action="./php/auth.html" name="auth-form" method="GET" class="u-form">
+
+          <input type="text" name="user-name" inputmode="text" required placeholder="Введіть ім'я" minlength="2" maxlength="30" value="Макс"/>
+          <input type="password" name="user-pass" inputmode="text" required placeholder="Введіть пароль" minlength="8" maxlength="16" value="hdgsklajdasdassda"/>
+          <input type="email" name="user-email" inputmode="email" required placeholder="Введіть пошту" value="test@test.ua" />
+          <input type="tel" name="user-phone" inputmode="tel" required placeholder="096-99-00-999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" value="097-00-98-223"/>
+          <input type="file" name="user-phone"/>
+          <input type="hidden">
+
+          <label for="color">Виберіть колір</label>
+          <input type="color" id="color">
+
+          <label>Виберіть дату 
+            <input type="date">
+          </label>
+
+          <input type="number" min="1" max="20" value="1" step="3">
+
+          від 2 <input type="range" min="2" max="20" step="2"> до 20
+
+          <input type="search" placeholder="Введіть дані для пошуку">
+
+          <input type="time">
+
+          <input type="url">
+
+          <input type="week">
+
+          <input type="month">
+
+          <textarea name="comments" id="" placeholder="Залиште коментар" rows="50" maxlength="60" minlength="20"></textarea>
+
+          <div class="wrp-input">
+            <p>Виберіть вік:</p>
+            <label for="">
+              <span>18</span>
+              <input type="radio" value="18" name="age" checked>
+            </label>
+            <label for="">
+              <span>30</span>
+              <input type="radio" value="30" name="age">
+            </label>
+            <label for="">
+              <span>50</span>
+              <input type="radio" value="50" name="age">
+            </label>
+
+
+            <p>Виберіть улюблені кольори:</p>
+            <label for="">
+              <span>red</span>
+              <input type="checkbox" value="red" name="color" checked>
+            </label>
+            <label for="">
+              <span>blue</span>
+              <input type="checkbox" value="blue" name="color">
+            </label>
+            <label for="">
+              <span>green</span>
+              <input type="checkbox" value="green" name="color">
+            </label>
+            <label for="">
+              <span>yellow</span>
+              <input type="checkbox" value="yellow" name="color">
+            </label>
+          </div>
+
+          <div class="wrp-input">
+            <select name="country" id="country" >
+                <option selected disabled>Країни Європи</option>
+                <option value="Україна"name="country-item">Україна</option>
+                <option value="Польща"name="country-item">Польща</option>
+                <option value="Франція"name="country-item">Франція</option>
+                <option value="Україна"name="country-item">Україна</option>
+                <option value="Польща"name="country-item">Польща</option>
+                <option disabled>Країни Азії</option>
+                <option value="Франція"name="country-item" class="c-asia">Франція</option>
+                <option value="Україна"name="country-item" class="c-asia">Україна</option>
+                <option value="Польща"name="country-item" class="c-asia">Польща</option>
+                <option value="Франція"name="country-item" class="c-asia">Франція</option>
+            </select>
+          </div>
+
+          <!-- <input type="submit" value="send"/>   -->
+          <!-- <input type="reset" value="reset"/>   -->
+
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- 
+    user-name=dfsdf
+    user-pass=dsfdsf
+    user-email=dsfsdf
+    user-phone=dsf 
+  -->
+
+    <div class="tree">
+      <span class="red"></span>
+      <span class="blue"></span>
+      <span class="gree"></span>
+      <span class="crimson"></span>
+      <span class="coral"></span>
+      <span class="yellow"></span>
+      <span class="darkred"></span>
+    </div>
+    <div class="snow"></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
