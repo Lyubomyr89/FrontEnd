@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  /* font-size: 16px = font-size: 1em */
+  /* 48px = 1em */
+  /* 20px = 1em */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2em;
+  /* 60px / 20px = 3em; */
+  margin-bottom: 30px;
+}
+p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  padding-top: 40px;
+}
+/* Адаптивні зображення !!!!*/
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* Адаптивні зображення !!!!*/
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #1b2735de;
+  min-height: 100vh;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: #e7d508 1px solid;
+  margin-bottom: 20px;
+}
+
+.box .inner-box {
+  width: 33.33%;
+  min-width: 150px;
+  max-width: 350px;
+  background-color: bisque;
+  border: 1px solid red;
+  min-height: 100px;
+}
+
+.box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: #e78e08 1px solid;
+  margin-bottom: 20px;
+}
+
+.box-2 .inner-box {
+  background-color: rgb(11, 116, 107);
+  border: 1px solid red;
+  min-height: 100px;
+}
+
+.left {
+  width: 17.09%;
+  margin-right: 1.7%;
+}
+
+.center {
+  width: 55.56%;
+  margin-right: 1.7%;
+}
+.right {
+  flex-grow: 1;
+}
+
+.box-3 {
+  min-height: 30vh;
+  background-color: rgba(233, 199, 8, 0.911);
+}
+
+.media-block {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  margin: 0 auto;
+}
+/* Адаптивні зображення */
+.img-container {
+  max-width: 800px;
+  /* height: 400px; */
+  border: 2px dashed white;
+  margin: 0 auto;
+}
+
+.img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: contain; */
+}
+
+/* Від 576px включно на фон буде orangered */
+@media (min-width: 576px) {
+  .box-3 {
+    background-color: orangered;
+  }
+}
+
+@media (min-width: 768px) {
+  .box-3 {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 992px) {
+  .box-3 {
+    background-color: rgb(211, 7, 41);
+  }
+}
+
+@media (min-width: 1200px) {
+  .box-3 {
+    min-height: 50vh;
+    background-color: rgb(7, 180, 211);
+  }
+}
+
+h2 {
+  font-size: 150px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .box-3 {
+    min-height: 40vh;
+  }
+
+  h2 {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 860px) {
+  .box-3 {
+    min-height: 35vh;
+  }
+
+  h2 {
+    color: rgb(11, 116, 107);
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .box-3 {
+    min-height: 50vh;
+  }
+
+  h2 {
+    font-size: 50px;
+    color: white;
+  }
+}
+
+/* 
+  and 
+  not
+*/
+
+/* Від 320px до 575px */
+@media (min-width: 320px) and (max-width: 575px) {
+  .media-block {
+    background-color: thistle;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px),
+  (max-width: 1200px) and (min-width: 992px) {
+  .media-block {
+    background-color: rgb(160, 150, 121);
+  }
+}
+
+@media not screen and (min-width: 420px) and (max-width: 575px) {
+  .img-container {
+    width: 90%;
+    box-shadow: -1px 1px 22px 0px rgba(250, 248, 248, 0.75);
+  }
+}
+
+/* 
+Типи пристроїв:
+  - all,
+  - screen,
+  - print,
+  - speech
+*/
+
+@media screen and (min-width: 576px) {
+  .img-container {
+    background-color: rgb(73, 72, 70);
+  }
+}
+
+/* 
+Типи орієнтації:
+  - Горизонтальна (landscape)
+  - Вертикальна (portait)
+*/
+
+@media screen and (orientation: landscape) {
+  .img-container {
+    background-color: rgb(228, 62, 11);
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .img-container {
+    background-color: rgb(7, 141, 36);
+  }
+}
+
+/* ==========Ялинка=============== */
+.tree {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 200px;
+  height: 200px;
+  background: url(../images/tree.png) no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
+.tree span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  position: absolute;
+  animation: light infinite 1s ease-in-out;
+  z-index: -1;
+}
+
+@keyframes light {
+  0%,
+  25% {
+    filter: hue-rotate(0deg);
+  }
+
+  26%,
+  50% {
+    filter: hue-rotate(125deg);
+  }
+
+  51%,
+  75% {
+    filter: hue-rotate(250deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 0.82);
+  box-shadow: 0px 0px 13px 5px rgb(255 0 0);
+  left: 82px;
+  top: 48px;
+}
+.blue {
+  background-color: rgba(0, 0, 255, 0.89);
+  box-shadow: 0px 0px 13px 5px rgba(0, 0, 255, 0.922);
+  left: 102px;
+  top: 68px;
+}
+.gree {
+  background-color: rgba(0, 128, 0, 0.904);
+  box-shadow: 0px 0px 13px 5px rgba(0, 128, 0, 0.918);
+  left: 110px;
+  top: 98px;
+}
+.yellow {
+  background-color: rgba(255, 255, 0, 0.849);
+  box-shadow: 0px 0px 13px 5px rgba(255, 255, 0, 0.918);
+  left: 72px;
+  top: 125px;
+}
+
+.crimson {
+  background-color: rgba(220, 20, 60, 0.918);
+  box-shadow: 0px 0px 13px 5px rgba(220, 20, 60, 0.911);
+  left: 83px;
+  top: 88px;
+}
+
+.coral {
+  background-color: rgba(255, 127, 80, 0.932);
+  box-shadow: 0px 0px 13px 5px rgba(255, 127, 80, 0.904);
+  left: 109px;
+  top: 135px;
+}
+
+.darkred {
+  background-color: rgba(139, 0, 0, 0.925);
+  box-shadow: 0px 0px 13px 5px rgba(139, 0, 0, 0.904);
+  left: 73px;
+  top: 152px;
+}
+
+/* Сніжинка */
+
+.snow span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  animation: snow 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes snow {
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
